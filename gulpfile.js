@@ -48,10 +48,7 @@ gulp.task('sass', () => {
 });
 gulp.task('html', () => {
     gulp.src('./app/*.html')
-        .pipe(gulp.dest('./dist/'))
-        .pipe(reload({
-            stream: true
-        }));
+        .pipe(gulp.dest('./dist/'));
 });
 gulp.task('serve', ['js', 'sass', 'html'], () => {
     console.log('serve start:'.bgRed);
