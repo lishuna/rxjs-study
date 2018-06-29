@@ -60,8 +60,9 @@ gulp.task('serve', ['js', 'sass', 'html'], () => {
             port: 3002
         }
     });
+    console.log('http://localhost:3002'.green);
     gulp.watch('./app/scss/*.scss', ['sass']);
     gulp.watch('./app/js/*.js', ['js']);
     gulp.watch('./app/*.html').on('change', reload);
 });
-gulp.task('default', ['server'])
+gulp.task('default', ['serve'])
