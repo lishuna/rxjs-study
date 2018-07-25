@@ -1,7 +1,7 @@
 class DataSource {
     constructor() {
         let i = 0;
-        this._id = setInterval(() => this.emit(i++), 200); // 创建定时器
+        this._id = setInterval(() => this.emit(i++), 100); // 创建定时器
     }
 
     emit(n) {
